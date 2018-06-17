@@ -18,3 +18,18 @@ resource "aws_subnet" "fifteen-volts-subnet-one" {
     Name = "fifteen-volts"
   }
 }
+
+resource "aws_security_group" "fifteen-volts-security-group" {
+  vpc_id = "${aws_vpc.fifteen-volts-virtual-network.id}"
+
+  ingress {
+    from_port = 80
+    protocol = "tcp"
+    to_port = 80
+  }
+
+  tags {
+    Name = "fifteen-volts"
+  }
+
+}
