@@ -1,0 +1,15 @@
+### JetBrains template
+
+.idea/
+
+### Terraform template
+#  Local .terraform directories
+**/.terraform/*
+
+# .tfstate files
+*.tfstate
+*.tfstate.*
+
+# .tfvars files
+*.tfvars
+
